@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Flipkart Home page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIQEBAPEA8PDxAQEhAPEBAQDQ8OFhUNFREWFhURFhMYHSggGBolGxUVITEhJSkrLi4vFx8zODMtNygtLisBCgoKDg0OGxAQFy0mICUrLS0rNS02NystLSsrLS4tLS0vMC0rLS8tLi0tKy0tLS0tListLS4uLSstLS0tLS0tK//AABEIAOAA4QMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQQCAwUGB//EAEIQAAIBAgEHBwoFAgUFAAAAAAABAgMRBAUSITFRUpEGE0FxgZKhFCIyU2GxwdHS8BUWcpPhVIJDYqOy8QcjQkSi/8QAHAEAAQUBAQEAAAAAAAAAAAAAAAECAwUGBAcI/8QAQxEAAQMBAwcIBgcHBQAAAAAAAQACAxEEEiEFMUFRcZGhBhNSYYGx0dIUIlOSwfAVMkJiY6LhIzOCssLT4hYkVOPx/9oADAMBAAIRAxEAPwD7iABRnQuRistRi2oRcmtF9SObXylUnrm0tkdBy6s2pSs+l+830m2rtW+J59a8p2uYkOeQNQwHie0q7bZo4xUDet3lEt+XEnyiW/LiayTh52TpHefFOoNSz5+W/LiOelvy4mBpxNdQV31JLpY5r5SaBx3nxSUA0Kzz0t6XEnnpb0uJzsPlBSea45t9Cd76dhdHuMrTRxO/9U0XTmWznpb0uI56W9LiayLic4/pHeUtBqW3npb0uI56W2XE1Zwzwvv6R3lF0alt56W9LiOelvS4mrPGcHOP6R3lF0alt56W9LiOelvPia7gOcf0jvKKDUtnPS35cSOelvS4mBUxWOUHmpZz6dNkhWmVxo0nf+qQ3RnV7npb8uI5+W/LiVcLiVUTtoa1pm8a58rTQuO8+KUXTmCz8olvy4keUS35cTExGc7J0jvPin3RqVqjj6kNU7+xu/vOhQy2tVSNvatPgcSd7NpXsVJ1G+n4HVZ8p2qDFkhpqOI45uyiabNHJnHwXvoyuk1qensMjVQ9GP6Y+5G09DGZUaAAVCGDkkrt2S6TTicVGGvS9n3qOTiK8pvS9HQl0FXbsqxWX1R6z9WradGzP2YqWOIv2Ln08Es5ylpu20ujX07TPE9Hb8CwacV0dphyrMOLnVPzgqxIAwKWqFPKdByinFXcb6PY/wDgttmudQkYS114JpbeFFyMNh5OS0NJNNtq2g7EqholUNUqhLI8yFPjhorLqmt1StKqa3VGXVMI1b50jnSm6o54Lqfzauc6SqpR50yVULqTm1fVUzjVOeqpnGqFE0xroKocvH0JZ7kk2pabpX07CxGobo1B0biw1ooXxVWrJdBq8mmrqyT95fNUahsTGSOL3VKYG3RRSQSCKicFtw2t9XxMcTglLTHzZeDM8NrfV8SwKBUUUReWvqF3cLJOEbNOyS0bUjeeeo1pQd4u3uZ1sNjIz0ejLYbewZWitFGO9V3A7PA9lVWyRFuOhWwAXFCoVw5wg23nvTfo/gjm4b8uH8GpmJ56bSCf3TNx8ysLp1n57Fv5qG/Lh/BjOhTeuT4fwagJ6SPZM3HzJaHWfnsWfktLel99g8lpb0vvsMAHpI9kzcfMl9bpFZPBUd+X3/aYPJ1Dfqff9pJlRjnyzFba23aw5k5e4NbCwk4AUOJ95LeeBW8eHgtTyXR36n3/AGmLyRh9+r3o/SWq9Fwdm076ne5qHSTOjcWPhYCM4ofMlbK8ioeeHgtDyLh9+r3o/SR+CYf1lXjH6SwBvpn4TNx8UvOy9M8PBVvwTDb9XvR+kfgeG36vej9JZAel/hM3HxS89L0zw8FW/A8Nv1e9H6R+B4bfq96P0lkB6X+EzcfFHPS9M8PBV/wTD+sq8Y/SSsj4ffq96P0m8B6Z+EzcfFJzsnTPDwWpZIw+/V70fpMlkuhv1Pv+0zNtCi5uy7XZv3Do5nSODGQsJOYUPmSGV9Kl54eC1LJ9DfqeH0krBUV/5y+/7TLERzJZrad9T6DASSYxuLHwsBGfA+b50Jt5xFbx4eCz8lpb0vvsHktLel99hgBnpI9kzcfMj1ukVthh6a1SfD+DLm4b8uH8GgB6SPZM3HzJKHpH57Fv5uG/Lh/A5uG++H8GgCG0in7pm4+ZFDrPz2Lp50fWPx+RJRBcfSDugOPioub61qZBDJM8uhAQAQpBABCks5LSVSTepx1Wvpv0IrG7BVM2pFvVqfU/tHXk+QR2qNxzXhxw+KZICWEDUrWVnfMdmvSV2rbDnnWx0XODstWm70X6kck7MuRFlrLj9oA7hT4cVHAasQEAqFOpBABCkEAEKQQAQpL2Sr+dZJ6tbttKJ08m0vMcrtN6mti9motMjML7Y0jQCTspTvIUUxowrTllNundWtnN6U93UUi1lKbc7Np5q6FbX9oqkWVXh9tlcNYHutDTxBSxV5sD5zoCAcCkUggAhSCCRELaBcFjVRrQwQwVylUggAhSCACFIIAhxQu3hK7nFW1r0m/fbpuc7HYXm5aPReo00a0oPOja9tT1N7GdPDV6daneCz87zZKWiSktanst8rdBqYSzKlm5p5pK3Tr69h+0NBx1LkNYnVGYrkgtYrAyhpXnR29K7CoZ2eCSB9yRtD39YOkf+Gi6WuDhUKQQCFOUggAhSCDbQoSm7RXa9Q6NjpHBjBUnMBn+e5ITQVKUabk7cXbUjsVHGEM5PNSta2lPZo9pGGoqneO3Tnar6NTONWxirSbhopRbUNkpapVLbNaXazUQsGSrMZH0MjvkDYM5On3VyH9s6gzBJzbbb1t6TEgGVJJxK7FIIAIUggAhSCAIULeCAWCjotLBDBwKVCTEkRCEmJIIQkggELIpVpTw9Tyil1VYdDjvJffvLhBJFK6Nwc04pCKihXWyflKnXSkmk9Si9afT2/fSbquEhNttatF1o87pft/5PI18HKnJ1KH91P5Lp6uBbyfl63muTpvdlqv+p6vA0UeV2ysu2iO+3WAKja04drewLlMBBq00XXlk12zoy0adezbc1SwNRK+bs1tdPsNtPKnmqLimrJXUugsSylBrVNaYvVsaYzmMjy/VkLe0j+ZpS1nboqqLwNRaXCy/VH5m38Nnrcklo6WyzUylBxa87SmtXs6zXWyqmmlBu+j0rB6LkiPF0xPbX+RtUX5zo+d62LJ0Yq786zV+q6vo6rljETjCKu7Wd18VwucTGZaaVnOMdGpLOb7DjyxNTENqF4Q1SnJ6X7L/AA8SQZUs8DSLJFT7xwHmd20PWk5lzj65XRyplOWIk6FN5tP/ABJrd3b7TKEUkklZJWS9hqw1CNOObHtfS3tZXyllejhletUUb6orzpPqitPbqKR757bMGtq5xzAZz2DMNmAGJ0lT+rE2pwCvg8RjuWs5XVCjGMeipWd5W/THQuLOJXy5i5+liqnVBqiurzbF/ZOR+UJhekusHWancMPzA9SrZctWZho2rtmbjTuX1Iw52O9HvxPkFSOc7zc5vbKcn72Y81Hd8blq3kKaetafyf8AYuI8oBoi/N/ivsdyT5FhMROi86lN03/llKPFLQ+0+h8mMsPE03nW52m0p20Kz1St0anwKbLHJefJ0XPh4ewEVoLpbXAEipwrhWukYLusWVo7S/m7pa7eD24d2tdogEGYKtVYAB3qNaGQSzE4CpVIIAiFIIAIUggAhSCACFJXxWChU0tWlvLQ/wCTeBWuLTUIXInk6rT005XXslmvhqNTxGIjr5z9pPxsdwE/pBP1mg9ibd1LhrFYh6uc7KK+RmsPiJ65SivbPN8EdkBz+po3Iu9aoYfJEVpm3N7NS/k6CSS6El2JIHhuVnKJ1JSw1GVqcfNq1E/SfTGL3du3q19mTcn2jKlo5ph6yTmaNe05gMKnUASILTaY7NHff2DWfnToVnL/ACuabpYRptaJV2rpeymunr1e88hJttyk3KctMpyblJv2tkJW0A9cybkqzZPi5uBu0n6ztp+GYaAFirXbJbS6887AMwQAFiuVAACEO/yJxOZiVDoqxcO1LOT8HxOAXciVHHE0JLoqQ4NpNcGzjyjZxaLJLCftMcO2hpuNF0WSQxzseNDh348F9TAIPCQaiq9BW8AFioloYDIK8qVSCAIhSCACFIIAIUggAhSCACFIIAIUggic0k5N2STk2+iK9Jghed5ZZXdGmqNN2rVk1dPSqWpy9jepduw8HGNlZFrKWNeIrVKzvaTtBPoprRFcPG5WPacg5LGT7I2Mj1zi8/epm2NzDZXSsNlK1m0zEj6owGz9c/DQgALlV6AHpuS/J7nv+9Vvzadox1Z0lr07vvOS3W6CxQmed1GjeToA6z+poASJ7PZ5LRII4xj3DWVwsJgalZ2pUpVOh2joXW9S7Tp0+SmJeuMI+yU4fC57+lTjBKMYqMVoUYpRSXsSMzz+1cuLU53+3ia1v3quPAtA6xjtK0kWQIQP2jyT1UA7iV4KPJDEbaS65s62RuSfNVI1atRTlBpxjBPRJanJvS7bLHpwV1o5W5SnjMd5rQcDdFDTaS6m0UOorqiyPZY3BwBNNZr89qkEAzCtVvABZqJV2CGCtUykEARCkEAEKQQAQpBABCkEAEKQQAQpOHyyxnNYSdvSqtUo9T0y/wDlNdp2zxP/AFArXq4ansjKq17W7L/Y+Jd8nbKLRlKJpGAN4/w4j8wC4cpSmKyvcM+beadxK8xFWSWwkA9oWCQAAhW8l4N169Olqz3ZvYlpk/Bn0+lTUIxhFJRilCKXRBKyR43kHRvUrT3YRiv1TevwfE9oeX8tba6S2tswPqxgH+J2JPu3aacTjitdkGzhtnMulxO4Yd9eGpSCAYxXqkEAEKQQASqwCSCzUNFXZBLMSsUykEAEqkEAEKQQBpe0ZyihUg11KsY+lKMf1zjH3laplXDx14iivZz1OT4Jk8cMsorGwu2AnuCY5zW/WNFdBx58qMGtDxMOyNR+KRj+asH/AFC/arfSdYyTlAios0vuO8qg9Ns3tWe8PFdoHF/NeD/qF+1W+kfmvB/1C/arfSL9EZQ/4svuP8qPTbN7VnvDxXaPnHKmvn42suimoQXWkm/FyPXLlXg/Xr9ut9J8/r1+dq1q3rKkpdjk2vea3kdky0Q2qSWeJzaNoLwLa1IJpUCtLujWqbLlqifC1kbwcamhBzDTTrKxAB6KsqgABC91yIo2w7n0zm+5FJe9noTy+RMvYWhh6dKVZKUE3Jc3Vdm221dRt0l7814P+oX7Vb6TyDLNht9pyhNK2zSEF5oQxxqB6oP1dIAK3NhtFnis0bDKyoaK+sM+c6dZXaBy8Lyhw1SSjCtHOehJqVO72LOSVzplDPZ5oHXZo3NP3gWniArCORkgqxwI6jXuUggEKkUggCFCsgAs1CqzAZBWFTKQQAqhSGuwgBVFFSxOAnO9sViIX6FKCXgk/E4uL5M1568a5+yop/NnpyJysr+c/wBKcvBF3Y8v5QgIbE4bLjPgwHiuKewWeUVeD7zvNReDxHJGvH0Y0qnVKC/3JFSpkHER14efZBS91z3VfKsKd708QrbMPJLi0kcypyuoLVGtJ+2MV8TYWTLPKKVtfQg8a6Fu8l9OCpJ8nZMjOMxb2jy14rw2at2PdQzVsj3UWsoV41K1SpGLjGcnJRbTtpu/G5WNu3EAltDq1dSzjjQkA1+PWozVsXBDNWxd1EgW6NSSp1qM1bFwRKQAoACKlAACRAACFDgti4DMWxcCQJdGpLeOtY82ti4H0vk9iHUwtGcnd5jTb03zW438EfNj6VkGjzeGoQ/yJ9553xMZy4uCwx1GPOCmy46vG7w1K+5PXjO/HC7jtqKfFdAEA8vqtcpBAEKFZBALRRKuyAwVZU1EBjOmnrUX+pGipgKcvSpQfWmTRthP13OGxoPfI1NJfoA3kf0lWW/t6DXKvFa6lNddSCKcsi0H/gx4yXxNL5OYT1P+pV+o7o48l/bml7I2f3yoHutX2GM7XO/tq9LKFJa69H96HzNUsrUF/jU+ySfuKn5Zwvqv9WfzMZclsLuVV1VH8TsZFkE/Wln91nwLlAXZQ0Mj953lC2z5RYVf+xF9SqP3I01OUeDehzU1slRlL3owfJPDLUq3ZNfSY/lGhtrd+HyO2GHkzGaiacHYBxEdeK53PysRS7Hx+LvgvO8ocTQq1ISw6zY5tpJQVNXT0NR7fA5J7V8kKPROp25r+Bj+T6frandXzNdZuU+R4YmxNncQ3D1mvJ7TdxVLNke3SyF5Y2p1EAd68YD2f5Pp+tqd1fMfk+n62p3V8yf/AFbkn2x91/lUX0HbegN48V4wF3LGEjQrzoxk5qEYtydl5zjq0exopF9BOyeNssZq1wBGioIqDQ4qsljdE8sdnBodowQAEqjQA73J/IKxFOVSUnFJ5qtFO7sm9fWjmtlshscJmndRopoJzmgwFScSp7PZ5LRJzcYx3ZlwQez/ACfT9bU7q+ZC5IUvWVO4vmUv+rck+2Puv8qsPoO29Abx4rzOSsE69WFNXs5edJdEFr8PGx9MirJJaEvNS/ylLJuTaVCLVOLu9cm7y7X8EXTA8pcuNynM3mgRGyt2uck5yR2AAY4Z8TQaTJWTzZIzeNXOz9mYceOpAAZpWlEJIIBAVkEXBZqFV2AwVhU6AARCAAVCAARCAAEIAAQgBrr1VGEpvVCMpvqjFy+Aoa5/qtznAbTmRgMSvm2WKufisRPbVcV+hOy8EiqY0fRTet3b62ZH0HFEIo2xtzNFBsGAXmcr+ceXnSa70AA9Roe/5J083CU3azk5zfGyfgjwLPp2Cp5lKnHpVOEX+pRWd4mL5cz3LDHEPtPr2NB+JC0HJ2O9O9+ptN5/xKsAA8sWwQAAhAACEIJAIW8EAsaqKi0zVm09avfrIOzlXJrcnUgrt6ZR+Rx5U2tDVuu6GW2wy2aQtc000HQRox2Z/mqxSte2oKgDNezwGa9ngcV06lLggGa9ngM17PALp1IwQDNezwGa9ngF06kYIBmvZ4DNezwC6dSMEAzXs8BmvZ4BdOpGCHK5T4jMwleW2Kh3movwcjq5r2eB57ltGcqEKcYTlnVU5ZsJS8xJ67e2SLXIlnM2UYGEYXwTsb6x4Bclvk5uzSOHRO84DvXiYqyS9iJLHkNb1dTuT+Q8hrerqdyfyPcLzdYXnlx3RKrgseQ1vV1O5P5DyGt6up3J/ILzdYSXHdE7kyfR5ytTp784p9V0mfTjwvJnJ9R4qm3TqLNznfMktUXbWtrR7zmZbr4HmvLmR0lphiaCQ1hOGOLjT+juWu5Ox3YXuOFXU7AP1KxBlzMt18BzMt18DD81J0TuK0FRrWIMuZluvgOZluvgHNSdE7iio1rEGXMy3XwHMy3XwDmpOidxRUa1iDJUZbr4HSybk2Wcp1FmpaVHa+roRPZ7DPaHhjGnbTAdZ+ccwTHytYKkrH8MqbviD0INn9BWXW7ePBVvpb9QX//Z"
+    />
+  </head>
+
+  <body>
+    <div>
+      <nav>
+        <div class="logo">
+          <img
+            src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+            height="20px"
+            width="75px"
+          />
+          <p class="logo">
+            Explore
+            <span class="plus-color">plus</span>
+            <img
+              src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png"
+              width="10px"
+              height="10px"
+            />
+          </p>
+        </div>
+
+        <div class="search">
+          <input type="text" placeholder="Search for product brands and more" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="recentsearch">
+            <div class="recentsearch_list">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+              <p>Last searched items</p>
+            </div>
+            <p class="discover">Discover more</p>
+
+            <!-- Recent searches -->
+            <div class="recentsearch_list_discover">
+              <i class="fa fa-search"></i>
+              <p>Laptop</p>
+            </div>
+
+            <div class="recentsearch_list_discover">
+              <i class="fa fa-search"></i>
+              <p>Mobile</p>
+            </div>
+
+            <div class="recentsearch_list_discover">
+              <i class="fa fa-search"></i>
+              <p>Headphones</p>
+            </div>
+
+            <div class="recentsearch_list_discover">
+              <i class="fa fa-search"></i>
+              <p>Oven</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="loginBtn">Login</button>
+
+        <a href="#" class="navlink angledownIcon">
+          More
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="navlink">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          Cart
+        </a>
+      </nav>
+
+      <!-- Header section -->
+      <section class="container1">
+        <div class="catagories">
+          <div class="products">
+            <img
+              src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100"
+              alt="Top offers"
+              class="psize"
+            />
+            <p style="justify-content: center"><b>Top offers</b></p>
+          </div>
+
+          <div class="products">
+            <img
+              src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100"
+              alt="Gadgets"
+              class="psize"
+            />
+            <p style="justify-content: center"><b>Mobiles & Tablets</b></p>
+          </div>
+
+          <div class="products">
+            <img
+              src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100"
+              alt="Grocery"
+              class="psize"
+            />
+            <p style="justify-content: center"><b>Grocery</b></p>
+          </div>
+
+          <div class="products">
+            <img
+              src="https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png?q=100"
+              alt="Fashion"
+              class="psize"
+            />
+            <p style="justify-content: center"><b>Fashion</b></p>
+          </div>
+
+          <div class="products">
+            <img
+              src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100"
+              alt="Electronics"
+              class="psize"
+            />
+            <p style="justify-content: center"><b>Electronics</b></p>
+          </div>
+
+          <div class="products">
+            <img
+              src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100"
+              alt="Furniture & Decor"
+              class="psize"
+            />
+            <p style="justify-content: center"><b>Home & Decor</b></p>
+          </div>
+
+          <div class="products">
+            <img
+              src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100"
+              alt="Appliances"
+              class="psize"
+            />
+            <p style="justify-content: center"><b>Appliances</b></p>
+          </div>
+
+          <div class="products">
+            <img
+              src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100"
+              alt="Travel & Tourism"
+              class="psize"
+            />
+            <p style="justify-content: center"><b>Travel</b></p>
+          </div>
+
+          <div class="products">
+            <img
+              src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100"
+              alt="Toys, Beauty & More"
+              class="psize"
+            />
+            <p style="justify-content: center">
+              <b>Kids & More <i class="fa fa-angle-down"></i></b>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr style="color: whitesmoke; opacity: 40%" />
+
+      <section class="outside" style="background-color: whitesmoke">
+        <br />
+        <div class="container2">
+          <div class="text-box">
+            Deals Of The Day &nbsp;
+            <span style="color: grey; font-size: 18px">
+              <i class="fas fa-stopwatch" style="color: grey"></i> 22:07:56
+              left</span
+            >
+            <button id="view_all">View All</button>
+          </div>
+
+          <hr style="color: whitesmoke" />
+
+          <div class="content">
+            <div class="items">
+              <img
+                src="https://rukminim1.flixcart.com/image/832/832/kjvrdzk0/watch/f/e/z/ls2917-limestone-original-imafzcv7hhkztdmf.jpeg?q=70"
+                alt="Branded watches"
+                class="imgsize"
+              />
+              <p class="name"><b> Branded watches </b></p>
+              <p class="disc">Upto 80% + Extra 10% off</p>
+              <p class="desc">knockout Deals!</p>
+            </div>
+
+            <div class="items">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/knknc7k0/home-temple/j/m/u/326-big-tempal-son-mahavir-eco-products-original-imag27vg4zqn7zcq.jpeg?q=70"
+                alt="Home temples"
+                class="imgsize"
+              />
+              <p class="name"><b> Home temples </b></p>
+              <p class="disc">Extra 10% off</p>
+              <p class="desc">space saving furniture</p>
+            </div>
+
+            <div class="items">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/xif0q/cases-covers/flip-cover/w/u/c/13848-black-tgk-original-imaghy58hkfqhqzg.jpeg?q=70"
+                alt="Tablet cases"
+                class="imgsize"
+              />
+              <p class="name"><b> Tablet cases </b></p>
+              <p class="disc">Extra 10% off</p>
+              <p class="desc">for all top models</p>
+            </div>
+
+            <div class="items">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/kuvkcy80/showpiece-figurine/w/n/z/15-24-25-4-msman532-ecraftindia-76-2-original-imag7vruye8zmjtn.jpeg?q=70"
+                alt="Home decor"
+                class="imgsize"
+              />
+              <p class="name"><b> Home decor </b></p>
+              <p class="disc">From 80&#8377;</p>
+              <p class="desc">Lowest price ever</p>
+            </div>
+
+            <div class="items">
+              <img
+                src="https://rukminim1.flixcart.com/image/832/832/l4ln8nk0/t-shirt/k/6/v/-original-imagfgjctjfendpz.jpeg?q=70"
+                alt="Blue T-Shirt"
+                class="imgsize"
+              />
+              <p class="name"><b> Top wear </b></p>
+              <p class="disc">From 300&#8377; + Extra 10% off</p>
+              <p class="desc">Jecket, dresses & More</p>
+            </div>
+
+            <div class="items">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/xif0q/mobile/3/5/l/-original-imaghx9qmgqsk9s4.jpeg?q=70"
+                alt=" Iphone"
+                class="imgsize"
+              />
+              <p class="name"><b> Mobile phones </b></p>
+              <p class="disc">Flat 8000&#8377; off</p>
+              <p class="desc">Now at 56000&#8377;</p>
+            </div>
+
+            <div class="items">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/jp8ngcw0-1/gas-stove/t/z/x/8906022173659-butterfly-original-imafbj9zynzgfzbn.jpeg?q=70"
+                alt="Gas stove"
+                class="imgsize"
+              />
+              <p class="name"><b> Glass Manual Gas Stove </b></p>
+              <p class="disc">Extra ₹351 off</p>
+              <p class="desc">Number of Burners: 2, 3</p>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="container2">
+          <div class="text-box">
+            Books & Music Instruments
+            <button id="view_all">View All</button>
+            <p
+              style="
+                opacity: 0.6;
+                font-size: 14px;
+                padding-top: 7px;
+                display: flex;
+              "
+            >
+              Shop Now!
+            </p>
+          </div>
+          <hr style="color: whitesmoke" />
+          <div class="content">
+            <div class="items">
+              <img
+                src="https://rukminim1.flixcart.com/image/832/832/kjvrdzk0/watch/f/e/z/ls2917-limestone-original-imafzcv7hhkztdmf.jpeg?q=70"
+                alt="Branded watches"
+                class="imgsize"
+              />
+              <p class="name"><b> Branded watches </b></p>
+              <p class="disc">Upto 80% + Extra 10% off</p>
+              <p class="desc">knockout Deals!</p>
+            </div>
+
+            <div class="items">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/knknc7k0/home-temple/j/m/u/326-big-tempal-son-mahavir-eco-products-original-imag27vg4zqn7zcq.jpeg?q=70"
+                alt="Home temples "
+                class="imgsize"
+              />
+              <p class="name"><b> Home temples </b></p>
+              <p class="disc">Extra 10% off</p>
+              <p class="desc">space saving furniture</p>
+            </div>
+
+            <div class="items">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/xif0q/cases-covers/flip-cover/w/u/c/13848-black-tgk-original-imaghy58hkfqhqzg.jpeg?q=70"
+                alt="Tablet cases"
+                class="imgsize"
+              />
+              <p class="name"><b> Tablet cases </b></p>
+              <p class="disc">Extra 10% off</p>
+              <p class="desc">for all top models</p>
+            </div>
+
+            <div class="items">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/kuvkcy80/showpiece-figurine/w/n/z/15-24-25-4-msman532-ecraftindia-76-2-original-imag7vruye8zmjtn.jpeg?q=70"
+                alt="Home decor"
+                class="imgsize"
+              />
+              <p class="name"><b> Home decor </b></p>
+              <p class="disc">From 80&#8377;</p>
+              <p class="desc">Lowest price ever</p>
+            </div>
+
+            <div class="items">
+              <img
+                src="https://rukminim1.flixcart.com/image/832/832/l4ln8nk0/t-shirt/k/6/v/-original-imagfgjctjfendpz.jpeg?q=70"
+                alt="Blue T-Shirt"
+                class="imgsize"
+              />
+              <p class="name"><b> Top wear </b></p>
+              <p class="disc">From 300&#8377; + Extra 10% off</p>
+              <p class="desc">Jecket, dresses & More</p>
+            </div>
+
+            <div class="items">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/xif0q/mobile/3/5/l/-original-imaghx9qmgqsk9s4.jpeg?q=70"
+                alt=" Iphone"
+                class="imgsize"
+              />
+              <p class="name"><b> Mobile phones </b></p>
+              <p class="disc">Flat 8000&#8377; off</p>
+              <p class="desc">Now at 56000&#8377;</p>
+            </div>
+
+            <div class="items">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/jp8ngcw0-1/gas-stove/t/z/x/8906022173659-butterfly-original-imafbj9zynzgfzbn.jpeg?q=70"
+                alt="Gas stove"
+                class="imgsize"
+              />
+              <p class="name"><b> Glass Manual Gas Stove </b></p>
+              <p class="disc">Extra ₹351 off</p>
+              <p class="desc">Number of Burners: 2, 3</p>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.8822891883588!2d72.49718341420704!3d23.028093821902004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f4a59dacf7%3A0xff3e2c6ec71f55bd!2sSimform%20Solutions!5e0!3m2!1sen!2sin!4v1674144775492!5m2!1sen!2sin"
+            style="width: 100%; height: 100%"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <script src="script.js"></script>
+      <script
+        src="https://replit.com/public/js/replit-badge.js"
+        theme="blue"
+        defer
+      ></script>
+    </div>
+  </body>
+</html>
