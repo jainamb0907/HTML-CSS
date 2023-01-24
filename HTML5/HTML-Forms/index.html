@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Form in HTML </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h2>Registration form</h2>
+  <form action="server url" method="get|post">
+
+
+    <fieldset>
+      <legend>User Information:</legend>
+      <label for="firstname">First Name: </label> <br />
+      <input type="text" id="firstname" name="firstname" placeholder="First Name" /> <br />
+      <br> <label for="lastname">Last Name: </label> <br>
+      <input type="text" id="lastname" name="lastname" placeholder="Last Name" /> <br />
+      <br><label for="email">Email: </label> <br>
+      <input type="email" id="email" name="email" placeholder="Email id" /> <br />
+      <br><label for="pass">Password: </label> <br>
+      <input type="password" id="pass" name="pass" placeholder="Password" /> <br />
+      <br><label for="pass">Confirm your Password: </label> <br>
+      <input type="password" id="pass" name="pass" placeholder="re-enter your password" /> <br />
+      <br>
+      <hr>
+      <br><label for="address">Enter Your Eddress: </label> <br />
+      <textarea rows="2" cols="20" placeholder="Max 50 words"></textarea> <br>
+
+      <br> <label for="gender">Gender: </label>
+      <input type="radio" id="gender" name="gender" value="male" />Male
+      <input type="radio" id="gender" name="gender" value="female" />Female
+      <input type="radio" id="gender" name="gender" value="others" />Others<br>
+
+      <br> Hobby:<br>
+      <input type="checkbox" id="cricket" name="cricket" value="cricket" />
+      <label for="cricket">Cricket</label> <br>
+      <input type="checkbox" id="football" name="football" value="football" />
+      <label for="football">Football</label> <br>
+      <input type="checkbox" id="hockey" name="hockey" value="hockey" />
+      <label for="hockey">Hockey</label> <br> <br>
+
+      <input type="submit" value="Sign-up" onclick="alert('data submitted')">
+      <input type="reset" value="Reset">
+    </fieldset>
+  </form>
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>

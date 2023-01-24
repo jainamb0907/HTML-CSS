@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <h1>GeeksForGeeks</h1>
+  <h2>
+    HTML media Attribute
+  </h2>
+  <a href="https://ide.geeksforgeeks.org/" media="print and (resolution:300dpi)">
+    Click to open in the same tab
+  </a>
+  <br>
+  <a href="https://ide.geeksforgeeks.org/" target="_blank" media="print and (resolution:300dpi)">
+    Click to open in a different tab
+  </a>
+
+
+  <picture>
+    <source media="(min-width: 600px)"
+      srcset="https://media.geeksforgeeks.org/wp-content/uploads/20190328185307/gfg28.png">
+    <source media="(min-width: 400px)"
+      srcset="https://media.geeksforgeeks.org/wp-content/uploads/20190809013546/gfg_350X350.png">
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190521140445/gfglogo2.png" style="width:auto;">
+  </picture>
+
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
