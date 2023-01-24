@@ -1,0 +1,30 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* The webkit properties: fill the text with the gradient background 
+  The color property with transparent background
+  CSS background-image property: to add a gradient background to your text
+  The background-clip property: to get multicolor text instead of the multicolor background */
+
+.multicolortext {
+  text-align: center;
+  font-size: 50px;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text; /*it defines how far the background should extend within an element*/
+  color:transparent;
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    green,
+    blue,
+    yellow,
+    orange,
+    red
+  );
+
+}
