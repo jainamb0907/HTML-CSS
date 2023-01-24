@@ -1,0 +1,39 @@
+
+h1{  
+    background-color: #64d8e8;  
+} 
+
+div{  
+    background-color: yellow;  
+} 
+
+
+div {
+  background: rgb(227, 146, 209);
+}
+
+div.first {
+  background: rgba(0, 128, 0, 0.1);
+}
+
+div.second {
+  background: rgba(0, 128, 0, 0.3);
+}
+
+div.third {
+  background: rgba(0, 128, 0, 0.6);
+}
+
+p{  
+  color: red;
+    background-color: rgb(222, 223, 144); 
+    background-image: url("nature1.jpg");
+}  
+
+body {
+  background-image: url("smiley.gif");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: scroll;
+}

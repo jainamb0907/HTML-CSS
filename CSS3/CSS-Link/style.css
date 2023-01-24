@@ -1,0 +1,40 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+  text-decoration: none;
+  background-color: yellow;
+  padding: 14px 25px;
+  border: 2px solid green;
+  text-align: center;
+  display: inline-block;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+  text-decoration: none;
+  background-color:cyan;
+  border: 2px solid violet;
+  padding: 14px 25px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+  background-color: lightgreen;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+  background-color:hotpink;
+  text-decoration: underline;
+}

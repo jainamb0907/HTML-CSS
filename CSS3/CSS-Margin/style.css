@@ -1,0 +1,47 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+p {  
+    background-color: pink;  
+}  
+p.ex {  
+    margin-top: 50px;  
+    margin-bottom: 50px;  
+    margin-right: 100px;  
+    margin-left: 100px;  
+} 
+
+div {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+}
+
+div.three, p.three {
+  border: 1px solid black;
+  margin: 25px 50px 75px;
+  text-align: center;
+  background-color: lightblue;
+
+}
+
+div.auto {
+  width: 300px;
+  margin: auto;
+  border: 1px solid red;
+}
+
+div.inherit {
+  border: 1px solid red;
+  margin-left: 100px;
+}
+
+p.inherit {
+  margin-left: inherit;
+}

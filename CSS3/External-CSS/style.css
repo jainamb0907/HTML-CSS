@@ -1,0 +1,10 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
