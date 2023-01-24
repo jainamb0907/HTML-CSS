@@ -1,0 +1,41 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+/* Type selector */
+p {
+  text-align: center;
+  color: red;
+}
+
+/* Id selector*/
+#para1 {
+  text-align: center;
+  color: blue;
+}
+/* Class selector*/
+.center {
+  text-align: center;
+  color: burlywood;
+}
+
+p.center {
+  text-align: center;
+  color: brown;
+}
+
+p.large {
+  font-size: 300%;
+}
+
+/* Universal selector*/
+* {  
+   color: green;  
+   font-size: 20px;  
+} 
+
+/* Grouping selectors*/
+h1, h2, p {
+  text-align: center;
+  color: orange;
+}
