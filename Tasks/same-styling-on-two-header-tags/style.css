@@ -1,0 +1,11 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.same-styling {
+  color: darkblue;
+  text-align: center;
+  background-color: yellow;
+  opacity: 70%;
+}
