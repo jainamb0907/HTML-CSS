@@ -13,35 +13,77 @@ nav {
   width: auto;
 }
 
+.stopwatch {
+  color: grey;
+}
+
+.toast_text {
+  color: green;
+}
+
+.toast_header {
+  color: black;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#shop {
+  opacity: 0.6;
+  font-size: 14px;
+  padding-top: 7px;
+  display: flex;
+}
+
+.outside {
+  background-color: whitesmoke;
+}
+
+#cname {
+  justify-content: center;
+  font-weight: 400;
+}
+
 .plus-color {
   color: yellow;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 p.logo {
   color: white;
-  position: relative;
-  top: -5px;
+  margin-bottom: 0rem;
+  font-weight: 500;
 }
 
 .search {
   background-color: white;
   padding: 8px 10px;
-  width: 420px;
-  height: 20px;
+  height: 40px;
   margin: 0px 15px;
   margin-right: 172px;
   display: flex;
   justify-content: space-between;
   color: #2874f0;
   box-shadow: -7px -7px 10px rgba(0, 0, 0, 0.1), 7px 7px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
+  border-radius: 6px;
+}
+
+.input_search {
+  border: none;
+}
+
+.search_btn {
+  border: none;
+  background-color: white;
+  color: #2874f0;
 }
 
 .search input {
   width: 380px;
   outline: none;
-  border: none;
   font-size: 14px;
 }
 
@@ -50,8 +92,10 @@ p.logo {
   font-size: 16px;
   font-weight: 550;
   border: none;
+  border-radius: 3px;
   outline: none;
   color: #2874f0;
+  background-color: white;
 }
 
 .navlink {
@@ -59,6 +103,7 @@ p.logo {
   font-size: 18px;
   color: white;
   text-decoration: none;
+  --bs-link-hover-color: white;
 }
 
 .angledownIcon i {
@@ -70,12 +115,11 @@ p.logo {
   position: absolute;
   top: 50px;
   background-color: white;
-  width: 420px;
+  width: 416px;
   padding: 8px 10px;
   margin-left: -10px;
   height: 350px;
   box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.2), 5px 5px 10px rgba(0, 0, 0, 0.2);
-/*   border-top: 1px solid white; */
 }
 
 .recentsearch_list {
@@ -113,7 +157,7 @@ p.logo {
 
 .container1 {
   display: flex;
-/*   border: 2px solid black; */
+  /*   border: 2px solid black; */
   flex-direction: row;
   justify-items: center;
   margin: 0px 110px;
@@ -131,8 +175,7 @@ p.logo {
 }
 
 .products {
-/*   border: 2px dotted red; */
-  /*   width: 64px; */
+  /*   border: 2px dotted red; */
   flex: auto;
   cursor: pointer;
   text-align: center;
@@ -140,12 +183,8 @@ p.logo {
 }
 
 img.psize {
-  width: 50px;
   height: 50px;
-  padding: 10px;
   padding-bottom: 0px;
-  /*   display: flex;
-  flex:auto; */
   justify-content: center;
 }
 
@@ -155,36 +194,40 @@ img.psize {
 
 #view_all {
   border-radius: 5px;
-  /*   border: 2px solid  green; */
+  border: none;
   color: white;
   float: right;
   cursor: pointer;
   background-color: #2874f0;
   justify-items: center;
-  padding: 5px 5px;
+  padding: 5px 10px;
 }
 
 .text-box {
   font-size: 22px;
   /*   border: 2px solid yellow; */
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 15px 15px;
   font-family: Roboto, Arial, sans-serif;
   font-weight: 600;
+  border-bottom: whitesmoke solid;
 }
 
 .container2 {
   background-color: white;
-/*   border: 1px dotted #ef0b0b; */
-  /*   padding-bottom: 15px; */
+  /*   border: 1px dotted #ef0b0b; */
   margin: 0px 100px;
 }
 
 .imgsize {
-  width: 187px;
-  height: 187px;
+  height: 236px;
   padding: 15px;
   display: flex;
   flex: auto;
+}
+
+.cb {
+  flex: 0 0 0;
+  padding-bottom: 0;
 }
 
 .content {
@@ -197,27 +240,14 @@ img.psize {
 }
 
 .items {
-  padding-bottom: 15px;
-/*   border: 1px groove #47d813; */
+  /*   border: 1px groove #47d813; */
+  width: 18rem;
+  margin-left: 15px;
   text-align: center;
 }
 
-.name {
-  /*   margin-top: 0px; */
-  font-size: 14px;
-  font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  background-color: white;
-}
-
 .disc {
-  padding-top: 8px;
+  margin-bottom: 5px;
   color: green;
   justify-content: center;
   display: flex;
@@ -229,7 +259,7 @@ img.psize {
 .desc {
   opacity: 0.6;
   font-size: 14px;
-  padding-top: 7px;
+  padding-bottom: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,5 +273,35 @@ img.psize {
   height: 369px;
   overflow: auto;
   justify-content: center;
-/*   border: 2px solid black; */
+  /*   border: 2px solid black; */
+}
+
+.toast {
+  margin-left: 96rem;
+}
+
+.row {
+  display: flex;
+  column-gap: 1vw;
+  justify-content: center;
+}
+
+.icon_b {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+}
+
+.icon_left {
+  left: 0rem;
+}
+
+.icon_right {
+  right: 1rem;
+}
+
+.carousel {
+  position: relative;
+  width: 100vw;
 }
