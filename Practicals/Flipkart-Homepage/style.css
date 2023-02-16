@@ -235,17 +235,15 @@ img.psize {
   flex-direction: row;
   display: flex;
   justify-items: center;
-  border: red solid;
+  /* border: red solid; */
   justify-content: center;
 }
 
 .carousel_content_row {
   display: flex;
-  border: orange 2px solid;
-  /* object-fit: cover; */
+  /* border: orange 2px solid; */
   column-gap: 1vw;
   justify-content: center;
-  /* overflow-x: hidden; */
 }
 
 .disc {
@@ -300,4 +298,8 @@ img.psize {
 .carousel {
   position: relative;
   width: 100vw;
+}
+
+.centor {
+  text-align: center;
 }
