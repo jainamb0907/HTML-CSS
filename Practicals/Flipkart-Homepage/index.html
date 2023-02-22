@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Flipkart Home page</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="icon"
+      href="data:image/jpeg;base64,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"
+    />
+  </head>
+
+  <body>
+    <div>
+      <nav>
+        <div class="logo">
+          <img src="Images/flipkart_plus.png" height="20px" width="75px" />
+          <p class="logo">
+            Explore
+            <span class="plus-color">plus</span>
+            <img src="Images/plus.png" width="10px" height="10px" />
+          </p>
+        </div>
+
+        <div class="search">
+          <input
+            type="text"
+            class="input_search"
+            placeholder="Search for product brands and more"
+          />
+
+          <button type="button" class="search_btn">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </button>
+
+          <div class="recentsearch">
+            <div class="recentsearch_list">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+              <p>Last searched items</p>
+            </div>
+            <p class="discover">Discover more</p>
+
+            <div class="recentsearch_list_discover">
+              <i class="fa fa-search"></i>
+              <p>Laptop</p>
+            </div>
+
+            <div class="recentsearch_list_discover">
+              <i class="fa fa-search"></i>
+              <p>Mobile</p>
+            </div>
+
+            <div class="recentsearch_list_discover">
+              <i class="fa fa-search"></i>
+              <p>Headphones</p>
+            </div>
+
+            <div class="recentsearch_list_discover">
+              <i class="fa fa-search"></i>
+              <p>Oven</p>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="loginBtn" id="liveToastBtn">Login</button>
+
+        <a href="#" class="navlink angledownIcon">
+          More
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="navlink">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          Cart
+        </a>
+      </nav>
+
+      <div
+        aria-live="polite"
+        aria-atomic="true"
+        class="bg-body-secondary position-relative bd-example-toasts rounded-3"
+      >
+        <div class="toast-container p-3 toastmine" id="toastPlacement">
+          <div
+            id="liveToast"
+            class="toast"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          >
+            <div class="toast-header">
+              <strong class="me-auto toast_header">Congrats</strong>
+              <small>Just Now!</small>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="toast"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="toast-body toast_text">You Login Successfully</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header section -->
+      <section class="container1">
+        <div class="catagories">
+          <div class="products">
+            <a
+              target="_blank"
+              href="https://www.flipkart.com/offers-list/top-offers?screen=dynamic&pk=themeViews%3DEvents-Topoffers%3ADeal-card~widgetType%3DdealCard~contentType%3Dneo&wid=4.dealCard.OMU_3&otracker=hp_omu_Top%2BOffers_3&otracker1=hp_omu_PINNED_neo%2Fmerchandising_Top%2BOffers_NA_wc_view-all_3"
+            >
+              <img src="Images/to.webp" alt="Top offers" class="psize" />
+              <p id="cname"><strong>Top offers</strong></p>
+            </a>
+          </div>
+
+          <div class="products">
+            <a
+              target="_blank"
+              href="https://www.flipkart.com/mobile-phones-store?fm=neo%2Fmerchandising&iid=M_780f9252-91ef-44d7-93ef-a9cb9261ff8a_1_372UD5BXDFYS_MC.ZRQ4DKH28K8J&otracker=hp_rich_navigation_2_1.navigationCard.RICH_NAVIGATION_Mobiles_ZRQ4DKH28K8J&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_2_L0_view-all&cid=ZRQ4DKH28K8J"
+            >
+              <img src="Images/gadgets.webp" alt="Gadgets" class="psize" />
+              <p id="cname"><b>Mobiles & Tablets</b></p>
+            </a>
+          </div>
+
+          <div class="products">
+            <a
+              target="_blank"
+              href="https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY&fm=neo%2Fmerchandising&iid=M_d5d243d0-fab8-43ef-b6ad-a8f52c85db23_1_372UD5BXDFYS_MC.CBUR1Q46W5F1&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Grocery_CBUR1Q46W5F1&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L0_view-all&cid=CBUR1Q46W5F1"
+            >
+              <img src="Images/groceries.webp" alt="Grocery" class="psize" />
+              <p id="cname"><b>Grocery</b></p>
+            </a>
+          </div>
+
+          <div class="products">
+            <a
+              target="_blank"
+              href="https://www.flipkart.com/clothing-and-accessories/pr?sid=clo&otracker=categorytree&p%5B%5D=facets.ideal_for%255B%255D%3DGirls&p%5B%5D=facets.ideal_for%255B%255D%3DBoys&p%5B%5D=facets.ideal_for%255B%255D%3DBoys%2B%2526%2BGirls&p%5B%5D=facets.ideal_for%255B%255D%3DBaby%2BBoys%2B%2526%2BBaby%2BGirls&p%5B%5D=facets.ideal_for%255B%255D%3DBaby%2BBoys&p%5B%5D=facets.ideal_for%255B%255D%3DBaby%2BGirls&otracker=nmenu_sub_Baby%20%26%20Kids_0_Kids%27%20Clothing&fm=neo%2Fmerchandising&iid=M_63f2d7c8-2dfa-4d34-bc75-b398b3de0585_1_372UD5BXDFYS_MC.KOBJVGW86TN6&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Fashion~Kids~All_KOBJVGW86TN6&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L2_view-all&cid=KOBJVGW86TN6"
+            >
+              <img src="Images/fashion.webp" alt="Fashion" class="psize" />
+              <p id="cname"><b>Fashion</b></p>
+            </a>
+          </div>
+
+          <div class="products">
+            <a
+              target="_blank"
+              href="https://www.flipkart.com/camera-clp-store?otracker=nmenu_sub_Electronics_0_Camera&otracker=nmenu_sub_Electronics_0_Camera&otracker=nmenu_sub_Electronics_0_Camera&otracker=nmenu_sub_Electronics_0_Camera&otracker=nmenu_sub_Electronics_0_Camera"
+            >
+              <img
+                src="Images/electronics.webp"
+                alt="Electronics"
+                class="psize"
+              />
+              <p id="cname"><b>Electronics</b></p>
+            </a>
+          </div>
+
+          <div class="products">
+            <a
+              target="_blank"
+              href="https://www.flipkart.com/home-furnishing/pr?sid=jra&marketplace=FLIPKART&otracker=nmenu_sub_Home%20%26%20Furniture_0_Furnishing&fm=neo%2Fmerchandising&iid=M_6a8e425f-56a6-4d97-a8a3-a0328bf785e1_1_372UD5BXDFYS_MC.A8O1FN5LHOZ5&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Home~Home%2BFurnishings~All_A8O1FN5LHOZ5&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L2_view-all&cid=A8O1FN5LHOZ5"
+            >
+              <img
+                src="Images/f&d.webp"
+                alt="Furniture & Decor"
+                class="psize"
+              />
+              <p id="cname"><b>Home & Decor</b></p>
+            </a>
+          </div>
+
+          <div class="products">
+            <a
+              target="_blank"
+              href="https://www.flipkart.com/tvs-and-appliances-new-clp-store?fm=neo%2Fmerchandising&iid=M_72244686-0864-4f29-a64c-65d5da31a6fa_1_372UD5BXDFYS_MC.LO4IWVHA61BX&otracker=hp_rich_navigation_6_1.navigationCard.RICH_NAVIGATION_Appliances_LO4IWVHA61BX&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_6_L0_view-all&cid=LO4IWVHA61BX"
+            >
+              <img
+                src="Images/appliances.webp"
+                alt="Appliances"
+                class="psize"
+              />
+              <p id="cname"><b>Appliances</b></p>
+            </a>
+          </div>
+
+          <div class="products">
+            <a
+              target="_blank"
+              href="https://www.flipkart.com/travel/flights?param=DTNavIcon&fm=neo%2Fmerchandising&iid=M_45210d0e-b986-490e-a287-ae971a1b9550_1_372UD5BXDFYS_MC.V4ZPKTOAO321&otracker=hp_rich_navigation_7_1.navigationCard.RICH_NAVIGATION_Travel_V4ZPKTOAO321&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_7_L0_view-all&cid=V4ZPKTOAO321"
+            >
+              <img src="Images/t&t.webp" alt="Travel & Tourism" class="psize" />
+              <p id="cname"><b>Travel</b></p>
+            </a>
+          </div>
+
+          <div class="products">
+            <a
+              target="_blank"
+              href="https://www.flipkart.com/beauty-and-grooming/pr?sid=g9b&otracker=categorytree&p%5B%5D=facets.fulfilled_by%255B%255D%3DFlipkart%2BAssured&fm=neo%2Fmerchandising&iid=M_5227a870-b58a-439e-a985-aa1ebf4ba179_1_372UD5BXDFYS_MC.NJKL2WGZ9KLB&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Beauty%252C%2BToys%2B%2526%2BMore~Beauty%2B%2526%2BPersonal%2BCare~View%2BAll_NJKL2WGZ9KLB&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L2_view-all&cid=NJKL2WGZ9KLB"
+            >
+              <img
+                src="Images/more.webp"
+                alt="Toys, Beauty & More"
+                class="psize"
+              />
+              <p id="cname">
+                <b>Kids & More <i class="fa fa-angle-down"></i></b>
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="outside">
+        <br />
+        <div class="container2">
+          <div class="text-box">
+            Deals Of The Day &nbsp;
+            <span class="stopwatch"
+              ><strong>
+                <i class="fas fa-stopwatch"></i> 22:07:56 left</strong
+              ></span
+            >
+            <button id="view_all"><small>View All</small></button>
+          </div>
+
+          <div class="content">
+            <div
+              id="carouselExampleInterval1"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <div class="carousel_content_row">
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/watches.webp"
+                        class="card-img-top d-block w-100 imgsize"
+                        alt="Branded watches"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Branded watches</h5>
+
+                        <p class="disc card-text text-center">
+                          Upto 80% + Extra 10% off
+                        </p>
+                        <p class="desc card-text text-center">
+                          knockout Deals!
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/temples.webp"
+                        alt="Home temples"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Home temples</h5>
+                        <p class="disc card-text text-center">Extra 10% off</p>
+                        <p class="desc card-text text-center">
+                          space saving furniture
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/m&t.webp"
+                        alt="Tablet cases"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Tablet cases</h5>
+
+                        <p class="disc card-text text-center">Extra 10% off</p>
+                        <p class="desc card-text text-center">
+                          for all top models
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/homedecor.webp"
+                        alt="Home decor"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Home decor</h5>
+
+                        <p class="disc card-text text-center">From 80&#8377;</p>
+                        <p class="desc card-text text-center">
+                          Lowest price ever
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/bicycle.webp"
+                        alt="bicycle"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">
+                          Premium Non-Geared Cycles
+                        </h5>
+
+                        <p class="disc card-text text-center">Up to 40% Off</p>
+                        <p class="desc card-text text-center">
+                          Hercules, Hero & More
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                  <div class="carousel_content_row">
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/football.webp"
+                        alt="Nivia Footballs"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">
+                          Premium Footballs
+                        </h5>
+
+                        <p class="disc card-text text-center">Up to 60% Off</p>
+                        <p class="desc card-text text-center">
+                          Nivia, Cosco & more
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/t-shirts.webp"
+                        alt="Blue T-Shirt"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+
+                      <div class="cb">
+                        <h5 class="card-title text-center">Top wear</h5>
+
+                        <p class="disc card-text text-center">
+                          From 300&#8377; + Extra 10% off
+                        </p>
+                        <p class="desc card-text text-center">
+                          Jecket, dresses & More
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/iphone.webp"
+                        alt=" Iphone"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Mobile phones</h5>
+
+                        <p class="disc card-text text-center">
+                          Flat 8000&#8377; off
+                        </p>
+                        <p class="desc card-text text-center">
+                          Now at 56000&#8377;
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/peanut_butter.webp"
+                        alt="Peanut Butter"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Food Spreads</h5>
+
+                        <p class="disc card-text text-center">Upto 75% Off</p>
+                        <p class="desc card-text text-center">
+                          Myfiness,Alpino & More
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/Mosquito Net.webp"
+                        alt="Mosquito Net"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Mosquito Nets</h5>
+
+                        <p class="disc card-text text-center">From ₹149</p>
+                        <p class="desc card-text text-center">
+                          Best Deal Price
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="carousel_content_row">
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/gas.webp"
+                        alt="Gas stove"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">
+                          Glass Manual Gas Stove
+                        </h5>
+                        <p class="disc card-text text-center">Extra ₹351 off</p>
+                        <p class="desc card-text text-center">
+                          Number of Burners: 2, 3
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/charger.webp"
+                        alt="Adapter"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Adapter only</h5>
+                        <p class="disc card-text text-center">From ₹99</p>
+                        <p class="desc card-text text-center">
+                          Ambrane, Mi & More
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/live_plants.webp"
+                        alt="Live Plants"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Live Plants</h5>
+                        <p class="disc card-text text-center">From ₹199</p>
+                        <p class="desc card-text text-center">Best Selling</p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/tea.webp"
+                        alt="Tea Powder"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Tea Powder</h5>
+                        <p class="disc card-text text-center">Upto 75% Off</p>
+                        <p class="desc card-text text-center">
+                          Tata,Lipton & More
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/Ab Exerciser.webp"
+                        alt="Ab Exerciser"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Ab Exerciser</h5>
+                        <p class="disc card-text text-center">From ₹199</p>
+                        <p class="desc card-text text-center">
+                          Adrenex, Manogyam & More
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev icon_b icon_left"
+                type="button"
+                data-bs-target="#carouselExampleInterval1"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon icon_b icon_left"
+                  aria-hidden="true"
+                  ><img
+                    src="https://img.icons8.com/ios-filled/50/null/chevron-left.png"
+                /></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next icon_b icon_right"
+                type="button"
+                data-bs-target="#carouselExampleInterval1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon icon_b icon_right"
+                  aria-hidden="true"
+                  ><img
+                    src="https://img.icons8.com/ios-filled/50/null/chevron-right.png"
+                /></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="container2">
+          <div class="text-box">
+            Books & Music Instruments
+            <button id="view_all"><small>View All</small></button>
+            <p id="shop">Shop Now!</p>
+          </div>
+
+          <div class="content">
+            <div
+              id="carouselExampleInterval2"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <div class="carousel_content_row">
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/String_Instruments.webp"
+                        class="imgsize card-img-top d-block w-100"
+                        alt="String Instruments"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">
+                          String Instruments
+                        </h5>
+
+                        <p class="disc card-text text-center">Up to 70% Off</p>
+                        <p class="desc card-text text-center">
+                          Guitars, Ukuleles & More
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/learn_book.webp"
+                        alt="Fiction Books (Up to 70% off)"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Fiction Books</h5>
+                        <p class="disc card-text text-center">Up to 70% off</p>
+                        <p class="desc card-text text-center">Shop Now!</p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/Microphones.webp"
+                        alt="Microphones (Up to 70% off)"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Microphones</h5>
+
+                        <p class="disc card-text text-center">Extra 20% off</p>
+                        <p class="desc card-text text-center">Explore Now!</p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/Head Tambourine.webp"
+                        alt="Head Tambourine"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">
+                          MUSICAL Head Tambourine
+                        </h5>
+
+                        <p class="disc card-text text-center">₹248</p>
+                        <p class="desc card-text text-center">50% off</p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/Self Help Books.webp"
+                        alt="Self Help Books"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Self Help Books</h5>
+
+                        <p class="disc card-text text-center">Min 20% off</p>
+                        <p class="desc card-text text-center">
+                          Napoleon Hill, Joseph Murphy..
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                  <div class="carousel_content_row">
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/Duracell_Batteries.webp"
+                        alt="Duracell_Batteries"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Batteries</h5>
+
+                        <p class="disc card-text text-center">From ₹79</p>
+                        <p class="desc card-text text-center">Best Selling</p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/Hammers.webp"
+                        alt="Wooden_Hammers"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+
+                      <div class="cb">
+                        <h5 class="card-title text-center">Hammers</h5>
+
+                        <p class="disc card-text text-center">From ₹139</p>
+                        <p class="desc card-text text-center">
+                          Buildskill and more
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/Welding Machines.webp"
+                        alt="Welding Machines"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Welding Machines</h5>
+
+                        <p class="disc card-text text-center">Starting ₹2999</p>
+                        <p class="desc card-text text-center">Best Selling</p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/Bike Light Bulb.webp"
+                        alt="Bike Light Bulb"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Bike Light Bulb</h5>
+
+                        <p class="disc card-text text-center">From ₹89</p>
+                        <p class="desc card-text text-center">
+                          Bike Essentials
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/Slippers & Flip Flops.webp"
+                        alt="Slippers & Flip Flops"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">
+                          Slippers & Flip Flops
+                        </h5>
+
+                        <p class="disc card-text text-center">Min. 70% Off</p>
+                        <p class="desc card-text text-center">
+                          Best Deal Price
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="carousel_content_row">
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/Sunglasses.webp"
+                        alt="Sunglasses pair"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Sunglasses</h5>
+                        <p class="disc card-text text-center">Min. 50% Off</p>
+                        <p class="desc card-text text-center">Buy Now!</p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/Artificial Jewellery.webp"
+                        alt="Artificial Jewellery"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">
+                          Artificial Jewellery
+                        </h5>
+                        <p class="disc card-text text-center">Min. 70% Off</p>
+                        <p class="desc card-text text-center">Big Discounts</p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/cricket_bat.webp"
+                        alt="MRF ENDORSED | for Light/Hard Tennis Ball [with Cover] | Full Size (SH) Natural Poplar Willow Cricket  Bat"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">Cricket Bat</h5>
+                        <p class="disc card-text text-center">Up to 45% Off</p>
+                        <p class="desc card-text text-center">
+                          CEAT, MRF & More
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/woodland.webp"
+                        alt="Best selling Styles Boots"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">woodland-boots</h5>
+                        <p class="disc card-text text-center">Min. 40% Off</p>
+                        <p class="desc card-text text-center">
+                          Puma, Nike, & More
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="Images/Stickers & Wallpapers.webp"
+                        alt="Stickers & Wallpapers"
+                        class="imgsize card-img-top d-block w-100"
+                      />
+                      <div class="cb">
+                        <h5 class="card-title text-center">
+                          Stickers & Wallpapers
+                        </h5>
+                        <p class="disc card-text text-center">From ₹199</p>
+                        <p class="desc card-text text-center">Best Offers</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev icon_b icon_left"
+                type="button"
+                data-bs-target="#carouselExampleInterval2"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon icon_b icon_left"
+                  aria-hidden="true"
+                  ><img
+                    src="https://img.icons8.com/ios-filled/50/null/chevron-left.png"
+                /></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next icon_b icon_right"
+                type="button"
+                data-bs-target="#carouselExampleInterval2"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon icon_b icon_right"
+                  aria-hidden="true"
+                  ><img
+                    src="https://img.icons8.com/ios-filled/50/null/chevron-right.png"
+                /></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <h4 class="centor"><strong>Google Map</strong></h4>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.8822891883588!2d72.49718341420704!3d23.028093821902004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f4a59dacf7%3A0xff3e2c6ec71f55bd!2sSimform%20Solutions!5e0!3m2!1sen!2sin!4v1674144775492!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
